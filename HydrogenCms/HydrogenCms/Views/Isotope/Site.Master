@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="HydrogenCms.Views.Isotope.Site" %>
+<%@ Register Src="~/Controls/HorizontalMenu.ascx" TagName="horizontalMenu" TagPrefix="hcms" %>
+<%@ Register Src="~/Controls/VerticalMenu.ascx" TagName="verticalMenu" TagPrefix="hcms" %>
+<%@ Register Src="~/Controls/Header.ascx" TagName="header" TagPrefix="hcms" %>
+<%--
+        Name:  HydrogenCMS.Isotope 1.0
+        Date:  2008.04.25
+      Author:  Jesse Foster | jf26028 (http://www.gravitycube.net/)
+ Description:  Simple skin for HydrogenCMS that enables many themes based on the same html structure.
+     License:  Creative Commons Attribution 3.0 License - Copyright (c) 2008, http://www.gravitycube.net/.  See License.txt for full license.
+--%>
+<%
+	//
+	// In the future, make this dynamic based on a configuration setting.
+	// The top navigation is best suited for single depth sites, for now.  No flyout menu has been implemented as of yet.
+	//
+	const bool USE_TOP_NAVIGATION = false;
+	
+	//
+	// The selected stylesheet should also be configurable.
+	//
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head id="headDefault" runat="server">
+		<hcms:header ID="headerContents" runat="server" />
+		<link rel="stylesheet" href="css/style005.css" type="text/css" />
+		<link rel="shortcut icon" href="~/Views/Isotope/images/favicon.ico" type="image/x-icon" />
+		<meta name="robots" content="all" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1><a href="~/" runat="server"><%= Html.Encode(HydrogenCms.Application.Settings.SiteName) %></a></h1>
+				<h2><%= Html.Encode(HydrogenCms.Application.Settings.SiteTagline) %></h2>
+			</div>
+
+			<% if (USE_TOP_NAVIGATION) { %>
+
+			<div id="navigation">
+				<hcms:horizontalMenu ID="horizontalMenu" runat="server" TopMenuOnly="false" SelectedClassName="selected" />
+				<div class="clear"></div>
+			</div>
+			
+			<div id="content" class="single">
+
+			<% } else { %>
+
+			<div id="content" class="faux">
+
+				<div id="side">
+					<hcms:verticalMenu ID="verticalMenu" runat="server" TopMenuOnly="false" SelectedClassName="selected" />
+				</div>
+
+				<div id="main">
+			<% } %>
+			
+					<asp:ContentPlaceHolder ID="chpDefault" runat="server">        
+					</asp:ContentPlaceHolder>
+			
+			<% if (!USE_TOP_NAVIGATION) { %>			
+				</div>
+				
+				<div class="clear"></div>
+
+			<% } %>
+			
+			</div>
+
+			<div id="footer">
+				<!-- design by http://www.gravitycube.net/ -->
+				Powered By <a href="http://www.hydrogencms.net/" target="_blank">HydrogenCMS</a> : Designed by <a href="http://www.gravitycube.net/" target="_blank">GravityCube.net</a>
+			</div>
+		</div>
+	</body>
+</html>

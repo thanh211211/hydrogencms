@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pages>
+  <Page>
+    <Content>&lt;p&gt;HydrogenCMS is a simple page management application build using asp.net mvc, and references from awesome web apps like &lt;a title="BlogEngine" href="http://dotnetblogengine.net/" target="_blank"&gt;BlogEngine&lt;/a&gt; and &lt;a title="Kigg" href="http://kigg.dotnetslackers.com/" target="_blank"&gt;Kigg&lt;/a&gt;, to name a few.&amp;nbsp; (If you haven't checked these open source applications out, you are missing out.)&amp;nbsp; And, in all actuality, BlogEngine could do everything this system can do, and, in most cases, better.&amp;nbsp; And, with the planned enhancements to the page model in BlogEngine, it should cover everything.&amp;nbsp; But, they are using different technologies (linq, mvc), so even if you don't use Hydrogen as your web site, it still has some value as a reference application.&lt;/p&gt; &lt;p&gt;HydrogenCMS started out, and to some extent, is still an experiment using some new techniques and the &lt;a href="http://forums.asp.net/1146.aspx" target="_blank"&gt;asp.net mvc framework&lt;/a&gt;.&amp;nbsp; It still has a way to go, but it is usable in its current form.&amp;nbsp; You may need to do some enhancements on the the navigation and what not until those things get ironed out, but overall, it is a decent reference.&amp;nbsp; And, as time goes on, it will only get better.&lt;/p&gt; &lt;p&gt;This application was written by &lt;a href="http://www.gravitycube.net/blog" target="_blank"&gt;Jesse Foster | jf26028&lt;/a&gt; from &lt;a href="http://www.gravitycube.net/blog" target="_blank"&gt;GravityCube&lt;/a&gt; with inspiration from &lt;a href="http://www.adamzastawski.com" target="_blank"&gt;Adam Zastawski&lt;/a&gt; and &lt;a href="http://jasonlay.net" target="_blank"&gt;Jason Lay&lt;/a&gt;.&amp;nbsp; If you have any enhancements or suggestions, I'll put your name here, too.&lt;/p&gt; &lt;p&gt;This site serves as a demo of the application, and the source can be downloaded from the &lt;a href="http://www.codeplex.com/HydrogenCMS" target="_blank"&gt;Codeplex site&lt;/a&gt;.&lt;/p&gt;</Content>
+    <CreatedBy></CreatedBy>
+    <CreatedOn>1/1/0001 12:00:00 AM</CreatedOn>
+    <DisplayOrder>300</DisplayOrder>
+    <ModifiedBy>admin</ModifiedBy>
+    <ModifiedOn>6/1/2008 6:25:59 PM</ModifiedOn>
+    <PageId>82d27425-cb38-49ac-a3a1-2b8caef29f01</PageId>
+    <ParentId>00000000-0000-0000-0000-000000000000</ParentId>
+    <PublishDate>6/1/2008 6:25:59 PM</PublishDate>
+    <Published>True</Published>
+    <Slug>About</Slug>
+    <Title>About</Title>
+  </Page>
+  <Page>
+    <Content>&lt;p&gt;Welcome to the HydrogenCMS.&lt;/p&gt; &lt;p&gt;&lt;a href="http://www.hydrogencms.net/" target="_blank"&gt;HydrogenCMS&lt;/a&gt; is a light, extendable cms designed for simplicity and ease of use.&amp;nbsp; It enables anyone to manage their content own content with as simple a tool as &lt;a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=d2baeda0-aa9a-4080-9202-1f23902d1169&amp;amp;displaylang=en" target="_blank"&gt;Windows Live Writer&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;The application is not finished, but it is functional, and this site is running the latest version.&amp;nbsp; The source will be available on the &lt;a href="http://www.codeplex.com/HydrogenCMS" target="_blank"&gt;CodePlex&lt;/a&gt; site as soon as I get it all checked in.&lt;/p&gt;</Content>
+    <CreatedBy></CreatedBy>
+    <CreatedOn>1/1/0001 12:00:00 AM</CreatedOn>
+    <DisplayOrder>0</DisplayOrder>
+    <ModifiedBy>admin</ModifiedBy>
+    <ModifiedOn>6/1/2008 6:59:24 PM</ModifiedOn>
+    <PageId>92b983ed-b841-4045-b160-bd142055a172</PageId>
+    <ParentId>00000000-0000-0000-0000-000000000000</ParentId>
+    <PublishDate>6/1/2008 6:59:24 PM</PublishDate>
+    <Published>True</Published>
+    <Slug>Home</Slug>
+    <Title>Home</Title>
+  </Page>
+  <Page>
+    <Content>&lt;p&gt;So, what, exactly, can HydrogenCMS do?&amp;nbsp;&amp;nbsp; Both, the wonderful, and not so great, answer is, "Just enough".&lt;/p&gt; &lt;p&gt;HydrogenCMS was designed to be as light and simple as possible.&amp;nbsp; Right now, all it does is serve dynamic pages that you enter via a blogging tool like Live Writer.&amp;nbsp; There are plans for plug-ins and extensions in the near future, but as of right now, it just serves pages.&lt;/p&gt; &lt;p&gt;Under the covers, there are quite a few features that developers will find useful.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Configurable data storage.&amp;nbsp; SqlServer via Linq2Sql and xml via Linq2Xml  &lt;li&gt;Easily skinned with the skin configured in the admin panel.  &lt;li&gt;Cached data for lightning fast pages.  &lt;li&gt;Google Sitemap.  &lt;li&gt;Simple page management (Managed from LiveWriter)&lt;/li&gt;&lt;/ul&gt; &lt;p&gt;If all this sounds too simple, that's because it is.&amp;nbsp; There are some things that still need to be done/bugs.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;More skins  &lt;li&gt;Compression  &lt;li&gt;Cleanup  &lt;li&gt;Unit Tests  &lt;li&gt;Search  &lt;li&gt;Contact Page  &lt;li&gt;Finish plug-in/extension architecture  &lt;li&gt;More options/page configuration (right now, there is none!)  &lt;li&gt;When working in LiveWriter, it does not pull back the Keywords or Slug.  &lt;li&gt;More to come...&lt;/li&gt;&lt;/ul&gt;</Content>
+    <CreatedBy />
+    <CreatedOn>1/1/0001 12:00:00 AM</CreatedOn>
+    <DisplayOrder>100</DisplayOrder>
+    <ModifiedBy>admin</ModifiedBy>
+    <ModifiedOn>6/5/2008 9:31:41 PM</ModifiedOn>
+    <PageId>a20909a5-dcf2-4bea-afcc-c7340b541b82</PageId>
+    <ParentId>00000000-0000-0000-0000-000000000000</ParentId>
+    <PublishDate>6/5/2008 9:31:41 PM</PublishDate>
+    <Published>True</Published>
+    <Slug>Features</Slug>
+    <Title>Features</Title>
+  </Page>
+</Pages>

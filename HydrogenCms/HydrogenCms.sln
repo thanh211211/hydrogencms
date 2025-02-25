@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrogenCms", "HydrogenCms\HydrogenCms.csproj", "{3EEBD685-7C03-4FB3-B26C-ED1B23F22C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrogenCmsTests", "HydrogenCmsTests\HydrogenCmsTests.csproj", "{EABF328D-D8A1-4E5A-B90D-542A555E4805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrogenCms.DatabaseMapping", "HydrogenCms.DatabaseMapping\HydrogenCms.DatabaseMapping.csproj", "{F25F775A-9CC0-4760-AA21-0F7FAC3CEEF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generator", "Generator", "{54CE6E37-4200-48B0-B52C-89C88FC0F9AC}"
+	ProjectSection(SolutionItems) = preProject
+		Generator\GenerateModel.cmd = Generator\GenerateModel.cmd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{8DCC7F7E-2AC7-4096-BBE8-1D112A11CBF7}"
+	ProjectSection(SolutionItems) = preProject
+		References\System.Web.Abstractions.dll = References\System.Web.Abstractions.dll
+		References\System.Web.Mvc.dll = References\System.Web.Mvc.dll
+		References\system.Web.Routing.dll = References\system.Web.Routing.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs07.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = HydrogenCms.DatabaseMapping\\HydrogenCms.DatabaseMapping.csproj
+		SccProjectName1 = HydrogenCms.DatabaseMapping
+		SccLocalPath1 = HydrogenCms.DatabaseMapping
+		SccProjectUniqueName2 = HydrogenCms\\HydrogenCms.csproj
+		SccProjectName2 = HydrogenCms
+		SccLocalPath2 = HydrogenCms
+		SccProjectUniqueName3 = HydrogenCmsTests\\HydrogenCmsTests.csproj
+		SccProjectName3 = HydrogenCmsTests
+		SccLocalPath3 = HydrogenCmsTests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EEBD685-7C03-4FB3-B26C-ED1B23F22C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEBD685-7C03-4FB3-B26C-ED1B23F22C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEBD685-7C03-4FB3-B26C-ED1B23F22C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEBD685-7C03-4FB3-B26C-ED1B23F22C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EABF328D-D8A1-4E5A-B90D-542A555E4805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EABF328D-D8A1-4E5A-B90D-542A555E4805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EABF328D-D8A1-4E5A-B90D-542A555E4805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EABF328D-D8A1-4E5A-B90D-542A555E4805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F25F775A-9CC0-4760-AA21-0F7FAC3CEEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F25F775A-9CC0-4760-AA21-0F7FAC3CEEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F25F775A-9CC0-4760-AA21-0F7FAC3CEEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F25F775A-9CC0-4760-AA21-0F7FAC3CEEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

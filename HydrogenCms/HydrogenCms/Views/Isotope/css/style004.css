@@ -1,0 +1,68 @@
+﻿/*
+        Name:  HydrogenCMS.Isotope 1.0, Style 004
+        Date:  2008.04.25
+      Author:  Jesse Foster | jf26028 (http://www.gravitycube.net/)
+ Description:  Simple skin for HydrogenCMS that enables many themes based on the same html structure.
+     License:  Creative Commons Attribution 3.0 License - Copyright (c) 2008, http://www.gravitycube.net/.  See License.txt for full license.
+ Attribution:  Inspired by The Daily Read by Refueled - http://www.refueled.net/templates/Daily-Read/
+*/
+
+/* standard elements */
+html { min-height: 100%; }
+* { margin: 0; padding: 0; }
+a { color: #222222; }
+a:hover { color: #666666; }
+a:visited{ color: #777777; }
+a img { border: none; }
+body { font: normal 62.5% Tahoma, Lucida Sans Unicode, Lucida Grande, sans-serif; }
+.outerouter {  }
+p,code,ul { padding-bottom: 1.2em; }
+li { list-style: none; }
+h1 { font: normal 1.7em Tahoma, Lucida Sans Unicode, Lucida Grande, sans-serif; }
+h2 { font: bold 1.5em Tahoma, Lucida Sans Unicode, Lucida Grande, sans-serif; }
+h3 { font: bold 1.2em Tahoma, Lucida Sans Unicode, Lucida Grande, sans-serif; }
+h4 { font: bold 0.9em Tahoma, Lucida Sans Unicode, Lucida Grande, sans-serif; }
+h5 { font: normal 0.8em Tahoma, Lucida Sans Unicode, Lucida Grande, sans-serif; }
+form,input { margin: 0; padding: 0; display: inline; }
+code { display: block; font: normal 1em Courier New, sans-serif; line-height: 1.6em; margin-bottom: 12px; padding: 8px 10px; white-space: pre; }
+blockquote { display: block; font-weight: bold; padding-left: 28px; }
+h1,h2,h3,h4,h5 { padding-top: 6px; margin-bottom: 4px; }
+
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+
+
+body { color: #333333; background: #efefef; }
+
+#wrapper { background: #ffffff; border: 1px solid #666666; margin: 0 auto; margin-top: 20px; width: 911px; }
+
+#header { border-bottom: solid 1px #333333; padding: 10px; padding-left: 20px; }
+#header a { color: #333333; text-decoration: none; }
+
+#header h1 { background: url(../images/style004/hydrogen.32.32.jpg) no-repeat; color: #333333; float: left; font-weight: bold; font-size: 160%; line-height: 32px; padding-left: 40px; padding-right: 40px; text-transform: uppercase; }
+#header h2 { color: #333333; font-size: 100%; font-weight: normal; padding: 0px; padding-top: 20px; }
+
+#navigation { background: #efefef; border-top: solid 1px #bbbbbb; border-bottom: solid 1px #bbbbbb; padding: 1px 1px 0px 1px; }
+#navigation ul { display: block; position: relative; top: 1px;list-style: none; padding: 0px; margin-bottom: 0px; }
+#navigation ul li { position: relative; float: left; border: solid 1px #bbbbbb; border-bottom: 0px; margin-right: 5px; }
+#navigation ul li.selected { background: #ffffff; }
+#navigation ul li a { display: block; padding: 5px 10px 8px 10px; text-decoration: none; background-color: inherit; color: #333333; }
+#navigation ul li a:hover { background-color: #dddddd; color: #333333; }
+#navigation ul li.active, #navigation ul li.active a, #navigation ul li.active a:hover { background-color: #ffffff; color: #333333; }
+#navigation div { clear: both; }
+
+#content { color: #222222; background: #ffffff; font-size: 110%; padding: 10px; }
+#content.faux { }
+#content.single { }
+
+#content #side { float: right; width: 180px; }
+#content #main { float: left; width: 720px; }
+
+#footer { background: #ffffff; border-top: solid 1px #333333; color: #333333; height: 20px; padding: 5px; line-height: 20px; text-align: center; }
+#footer a { color: #333333; }
+
+
+/* hydrogen specific */
+.errorMessageBox { border:solid 1px #CC0000; background:#F7CBCA; color:#CC0000; font-weight:bold; padding:4px; text-align:center; }
+.successMessageBox { border:solid 1px #349534; background:#C9FFCA; color:#008000; font-weight:bold; padding:4px; text-align:center; }

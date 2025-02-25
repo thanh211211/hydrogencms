@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="HydrogenCms" xmlns="http://schemas.microsoft.com/linqtosql/mapping/2007">
+	<Table Name="{0}.{1}Setting" Member="Settings">
+		<Type Name="HydrogenCms.Models.Setting">
+			<Column Name="SettingId" Member="SettingId" Storage="_SettingId" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+			<Column Name="Name" Member="Name" Storage="_Name" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+			<Column Name="Value" Member="Value" Storage="_Value" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+		</Type>
+	</Table>
+	<Table Name="{0}.{1}Page" Member="Pages">
+		<Type Name="HydrogenCms.Models.Page">
+			<Column Name="PageId" Member="PageId" Storage="_PageId" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+			<Column Name="ParentId" Member="ParentId" Storage="_ParentId" DbType="UniqueIdentifier" />
+			<Column Name="Slug" Member="Slug" Storage="_Slug" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+			<Column Name="Title" Member="Title" Storage="_Title" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+			<Column Name="Content" Member="Content" Storage="_Content" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+			<Column Name="Published" Member="Published" Storage="_Published" DbType="Bit NOT NULL" />
+			<Column Name="PublishDate" Member="PublishDate" Storage="_PublishDate" DbType="DateTime NOT NULL" />
+			<Column Name="DisplayOrder" Member="DisplayOrder" Storage="_DisplayOrder" DbType="Int NOT NULL" />
+			<Column Name="CreatedOn" Member="CreatedOn" Storage="_CreatedOn" DbType="DateTime NOT NULL" />
+			<Column Name="CreatedBy" Member="CreatedBy" Storage="_CreatedBy" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+			<Column Name="ModifiedOn" Member="ModifiedOn" Storage="_ModifiedOn" DbType="DateTime" />
+			<Column Name="ModifiedBy" Member="ModifiedBy" Storage="_ModifiedBy" DbType="NVarChar(64)" />
+			<Association Name="Page_Meta" Member="Metas" Storage="_Metas" ThisKey="PageId" OtherKey="PageId" />
+		</Type>
+	</Table>
+	<Table Name="{0}.{1}Meta" Member="Metas">
+		<Type Name="HydrogenCms.Models.Meta">
+			<Column Name="MetaId" Member="MetaId" Storage="_MetaId" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+			<Column Name="PageId" Member="PageId" Storage="_PageId" DbType="UniqueIdentifier" />
+			<Column Name="Name" Member="Name" Storage="_Name" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+			<Column Name="Content" Member="Content" Storage="_Content" DbType="NVarChar(2048) NOT NULL" CanBeNull="false" />
+			<Association Name="Page_Meta" Member="Page" Storage="_Page" ThisKey="PageId" OtherKey="PageId" DeleteRule="CASCADE" IsForeignKey="true" />
+		</Type>
+	</Table>
+</Database>

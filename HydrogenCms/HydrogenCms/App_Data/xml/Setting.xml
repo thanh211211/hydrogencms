@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Setting>
+    <Name>Password</Name>
+    <SettingId>4</SettingId>
+    <Value>412DA945039E388316FA31A13392E1A4F6CE67D5</Value>
+  </Setting>
+  <Setting>
+    <Name>MediaPath</Name>
+    <SettingId>2</SettingId>
+    <Value>~/Content/</Value>
+  </Setting>
+  <Setting>
+    <Name>SiteName</Name>
+    <SettingId>5</SettingId>
+    <Value>Hydrogen CMS</Value>
+  </Setting>
+  <Setting>
+    <Name>SiteTagline</Name>
+    <SettingId>6</SettingId>
+    <Value>A lightweight cms for simple pages.</Value>
+  </Setting>
+  <Setting>
+    <Name>Skin</Name>
+    <SettingId>1</SettingId>
+    <Value>Default</Value>
+  </Setting>
+  <Setting>
+    <Name>UserId</Name>
+    <SettingId>3</SettingId>
+    <Value>admin</Value>
+  </Setting>
+</Settings>

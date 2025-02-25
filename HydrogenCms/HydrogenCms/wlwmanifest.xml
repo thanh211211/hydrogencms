@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest xmlns="http://schemas.microsoft.com/wlw/manifest/weblog">
+	<options>
+		<clientType>Metaweblog</clientType>
+		<supportsAuthor>No</supportsAuthor>
+		<supportsCategories>No</supportsCategories>
+		<supportsCategoriesInline>No</supportsCategoriesInline>
+		<supportsEmbeds>Yes</supportsEmbeds>
+		<supportsExcerpt>Yes</supportsExcerpt>
+		<supportsKeywords>Yes</supportsKeywords>
+		<supportsMultipleCategories>No</supportsMultipleCategories>
+		<supportsNewCategories>No</supportsNewCategories>
+		<supportsNewCategoriesInline>No</supportsNewCategoriesInline>
+		<supportsSlug>Yes</supportsSlug>
+		<supportsPages>Yes</supportsPages>
+		<supportsPageParent>Yes</supportsPageParent>
+		<supportsPageOrder>Yes</supportsPageOrder>
+	</options>
+	<weblog>
+		<ServiceName>HydrogenCMS</ServiceName>
+		<imageUrl>Content/wlw/hydrogen.png</imageUrl>
+		<watermarkImageUrl>Content/wlw/hydrogenWatermark.png</watermarkImageUrl>
+		<homepageLinkText>View your Hydrogen site.</homepageLinkText>
+	</weblog>
+	<!--
+	<buttons>
+		<button>
+			<id>2</id>
+			<text>Tags</text>
+			<imageUrl>pics/benTag24.png</imageUrl>
+			<contentUrl>
+				<![CDATA[ 
+         {blog-homepage-url}api/tagminiview.aspx
+      ]]>
+			</contentUrl>
+			<contentDisplaySize>250,250</contentDisplaySize>
+		</button>
+	</buttons>
+	-->
+</manifest>

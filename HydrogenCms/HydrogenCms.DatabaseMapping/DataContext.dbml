@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="HydrogenCms" Class="DataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\..\HydrogenCms\App_Data\HydrogenCms.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="HydrogenCms.DatabaseMapping.Properties.Settings" SettingsPropertyName="HydrogenCmsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.hcms_Setting" Member="Settings">
+    <Type Name="Setting">
+      <Column Name="SettingId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.hcms_Page" Member="Pages">
+    <Type Name="Page">
+      <Column Name="PageId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Slug" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Content" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Published" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PublishDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Association Name="Page_Meta" Member="Metas" OtherKey="PageId" Type="Meta" />
+    </Type>
+  </Table>
+  <Table Name="dbo.hcms_Meta" Member="Metas">
+    <Type Name="Meta">
+      <Column Name="MetaId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PageId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="Content" Type="System.String" DbType="NVarChar(2048) NOT NULL" CanBeNull="false" />
+      <Association Name="Page_Meta" Member="Page" ThisKey="PageId" Type="Page" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+</Database>

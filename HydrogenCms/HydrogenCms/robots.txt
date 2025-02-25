@@ -1,0 +1,3 @@
+﻿sitemap: http://www.hydrogencms.net/Sitemap.aspx/Index 
+User-Agent: *
+Allow: /
